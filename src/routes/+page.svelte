@@ -139,7 +139,7 @@
 </main>
 
 <footer>
-  <p>&copy; HQCI 2026 organizers</p>
+  <p>&copy; Organizers</p>
 </footer>
 
 <style>
