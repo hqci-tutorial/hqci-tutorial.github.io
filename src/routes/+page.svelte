@@ -107,15 +107,16 @@
       Your name, job title, your email (optional), and research area (optional)
     </li>
     <li>
-      A short <strong>statement of interest</strong> (in any length) about why you
-      want to attend and what you expect to learn from this workshop.
+      A short <strong>statement of interest</strong> (in any length) about what you
+      expect to learn from this workshop.
     </li>
   </ul>
   <p>
-    We are collecting this information to assess the number of attendees. We
-    expect up to 20 attendees for an effective hands-on tutorial. While you can
-    still attend this tutorial without filling out this form, priority for
-    technical support will be given to those who have filled it out.
+    We are collecting this information to estimate the number of attendees. We
+    are expecting up to 20 attendees for an effective hands-on tutorial. While
+    you can still attend this tutorial without filling out this form, priority
+    for technical support will be given to those who have filled it out. If you
+    have further questions, please feel free to contact one of the organizers.
   </p>
 
   <h2><span>Preparation Materials</span></h2>
