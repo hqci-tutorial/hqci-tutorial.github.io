@@ -144,7 +144,12 @@
 </footer>
 
 <style>
+  * {
+    box-sizing: border-box;
+  }
   :global(html, body) {
+    margin: 0;
+    padding: 0;
     font-family: "Source Sans Pro", sans-serif;
   }
   header,
@@ -186,7 +191,9 @@
   }
   p.note {
     max-width: 100%;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     border: 1px solid #f57f17;
     background-color: #fff9c4;
     color: #f57f17;
