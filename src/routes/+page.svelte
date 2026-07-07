@@ -112,11 +112,12 @@
     </li>
   </ul>
   <p>
-    We are collecting this information to estimate the number of attendees. We
-    are expecting up to 20 attendees for an effective hands-on tutorial. While
-    you can still attend this tutorial without filling out this form, priority
-    for technical support will be given to those who have filled it out. If you
-    have further questions, please feel free to contact one of the organizers.
+    We are collecting this information to estimate the number of attendees and
+    support preliminary setups. We are expecting 20+ attendees for an effective
+    hands-on tutorial. While you can still attend this tutorial without filling
+    out this form, priority for technical support will be given to those who
+    have filled it out. If you have further questions, please feel free to
+    contact one of the organizers.
   </p>
 
   <h2><span>Preparation Materials</span></h2>
