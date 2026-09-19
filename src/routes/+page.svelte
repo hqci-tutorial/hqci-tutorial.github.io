@@ -71,11 +71,13 @@
   });
 </script>
 
+<div class="header-fade md:h-[450px] h-[500px] z-1 block"></div>
+
 <main
-  class="box-width text-md px-2 lg:px-0 lg:overflow-x-visible overflow-x-hidden"
+  class="box-width text-md px-2 lg:px-0 lg:overflow-x-visible overflow-x-hidden z-300"
 >
   <h1
-    class="h-[30vh] flex items-center flex-col justify-end bg-header pb-10 z-300"
+    class="md:h-[400px] h-[450px] flex items-center flex-col justify-end pb-10 z-300"
   >
     <small class="text-lg block text-gray-100 font-black text-shadow-md block"
       >IEEE VIS 2026 Tutorial</small
@@ -92,10 +94,12 @@
       >
     </div>
   </h1>
-  <h2 class="px-2 mb-3 text-3xl font-bold text-violet-700 mt-0">
-    <span>👋</span><span class="ml-3">Hello Quantum World!</span>
+  <h2 class="px-2 mb-3 text-3xl font-bold text-violet-700 mt-0 z-300 relative block">
+    <span class="z-300">👋</span><span class="ml-3 z-300"
+      >Hello Quantum World!</span
+    >
   </h2>
-  <div class="flex gap-3 justify-between flex-col md:flex-row relative">
+  <div class="flex gap-3 justify-between flex-col md:flex-row relative z-300">
     <div class="z-300">
       <p
         class="par-width h-fit-content par-text mb-5 border-1 rounded-md p-3 border-slate-200 shadow-sm shadow-slate-100 bg-white z-300"
@@ -139,9 +143,9 @@
       />
     </div>
   </div>
-  <div class="flex gap-3 flex-col md:flex-row mb-5">
-    <div class=" md:w-1/3">
-      <h2 class="text-lg font-bold text-emerald-900 mb-2">
+  <div class="flex gap-3 flex-col md:flex-row mb-5 z-300 relative">
+    <div class="md:w-1/3 block z-300">
+      <h2 class="text-lg font-bold text-emerald-900 mb-2 block z-300">
         <span>Where and when?</span>
       </h2>
       <div class="flex gap-3 flex-col">
@@ -208,96 +212,100 @@
       </table>
     </div>
   </div>
-
-  <h2 class="text-lg font-bold text-emerald-900 mb-2">
-    <span>How to participate?</span>
-  </h2>
-  <p class="text-slate-700 mb-2">
-    To participate, please fill out this <a
-      href="https://forms.gle/Lw11ThKvvKVBA7mB7"
-      target="_blank"
-      >form <Icon type="link-ext"></Icon>
-    </a> that asks:
-  </p>
-  <ul class="mb-3 text-slate-700 list-disc pl-5">
-    <li>
-      Your name, job title, your email (optional), and research area (optional)
-    </li>
-    <li>
-      A short <strong>statement of interest</strong> (in any length) about what you
-      expect to learn from this workshop.
-    </li>
-  </ul>
-  <p class="mb-5 text-slate-500 par-width text-sm">
-    We are collecting this information to estimate the number of attendees and
-    support preliminary setups (including perparation materials). We are
-    expecting 20+ attendees for an effective hands-on tutorial. While you can
-    still attend this tutorial without filling out this form, priority for
-    technical support will be given to those who have filled it out. If you have
-    further questions, please feel free to contact one of the organizers.
-  </p>
-
-  <h2 class="text-lg font-bold text-emerald-900 mb-2">
-    <span>Preparation checklist</span>
-  </h2>
-  <p>Check out the <a href="./prepare">Preparation instructions</a></p>
-  <ul class="mb-3 text-slate-700 pl-0">
-    <li>
-      <label>
-        <input
-          type="checkbox"
-          on:change={(e) => {
-            // @ts-ignore
-            prep_laptop = e.target.checked;
-          }}
-        />
-        Your laptop
-      </label>
-    </li>
-    <li>
-      <label>
-        <input
-          type="checkbox"
-          on:change={(e) => {
-            // @ts-ignore
-            prep_ibm = e.target.checked;
-          }}
-        />
-        Creating an IBM account
-      </label>
-    </li>
-    <li>
-      <label>
-        <input
-          type="checkbox"
-          on:change={(e) => {
-            // @ts-ignore
-            prep_test = e.target.checked;
-          }}
-        />
-        No errors in running the test code
-      </label>
-    </li>
-  </ul>
-  {#if prep_done}
-    <div class="mt-5 mb-5 alert-box">👍 All set! 🎉 See you in boston!</div>
-  {/if}
-
-  <h2 class="text-lg font-bold text-emerald-900 mb-2">
-    <span>Organizers</span>
-  </h2>
-  <div class="mb-5 flex gap-2 flex-wrap text-slate-600">
-    {#each Organizers as org, _}
-      <div
-        class="organizer min-w-4/15 p-3 border-1 border-slate-200 rounded-md shadow-sm shadow-slate-100"
-      >
-        <span class="org-name block"
-          ><a href={org.website} target="_blank">{org.name}</a>
-          <Icon type="link-ext"></Icon></span
+  <div class="block z-300 relative">
+    <h2 class="text-lg font-bold text-emerald-900 mb-2 block z-300">
+      <span>How to participate?</span>
+    </h2>
+    <p class="text-slate-700 mb-2 block z-300">
+      To participate, please fill out this <a
+        href="https://forms.gle/Lw11ThKvvKVBA7mB7"
+        target="_blank"
+        >form <Icon type="link-ext"></Icon>
+      </a> that asks:
+    </p>
+    <ul class="mb-3 text-slate-700 list-disc pl-5 block z-300">
+      <li>
+        Your name, job title, your email (optional), and research area
+        (optional)
+      </li>
+      <li>
+        A short <strong>statement of interest</strong> (in any length) about what
+        you expect to learn from this workshop.
+      </li>
+    </ul>
+    <p class="mb-5 text-slate-500 par-width text-sm">
+      We are collecting this information to estimate the number of attendees and
+      support preliminary setups (including perparation materials). We are
+      expecting 20+ attendees for an effective hands-on tutorial. While you can
+      still attend this tutorial without filling out this form, priority for
+      technical support will be given to those who have filled it out. If you
+      have further questions, please feel free to contact one of the organizers.
+    </p>
+  </div>
+  <div class="block z-300 relative">
+    <h2 class="text-lg font-bold text-emerald-900 mb-2">
+      <span>Preparation checklist</span>
+    </h2>
+    <p>Check out the <a href="./prepare">Preparation instructions</a></p>
+    <ul class="mb-3 text-slate-700 pl-0">
+      <li>
+        <label>
+          <input
+            type="checkbox"
+            on:change={(e) => {
+              // @ts-ignore
+              prep_laptop = e.target.checked;
+            }}
+          />
+          Your laptop
+        </label>
+      </li>
+      <li>
+        <label>
+          <input
+            type="checkbox"
+            on:change={(e) => {
+              // @ts-ignore
+              prep_ibm = e.target.checked;
+            }}
+          />
+          Creating an IBM account
+        </label>
+      </li>
+      <li>
+        <label>
+          <input
+            type="checkbox"
+            on:change={(e) => {
+              // @ts-ignore
+              prep_test = e.target.checked;
+            }}
+          />
+          No errors in running the test code
+        </label>
+      </li>
+    </ul>
+    {#if prep_done}
+      <div class="mt-5 mb-5 alert-box">👍 All set! 🎉 See you in boston!</div>
+    {/if}
+  </div>
+  <div class="block z-300 relative">
+    <h2 class="text-lg font-bold text-emerald-900 mb-2">
+      <span>Organizers</span>
+    </h2>
+    <div class="mb-5 flex gap-2 flex-wrap text-slate-600">
+      {#each Organizers as org, _}
+        <div
+          class="organizer min-w-4/15 p-3 border-1 border-slate-200 rounded-md shadow-sm shadow-slate-100"
         >
-        <span class="org-affiliation block text-sm">{org.affiliation}</span>
-      </div>
-    {/each}
+          <span class="org-name block"
+            ><a href={org.website} target="_blank">{org.name}</a>
+            <Icon type="link-ext"></Icon></span
+          >
+          <span class="org-affiliation block text-sm">{org.affiliation}</span>
+        </div>
+      {/each}
+    </div>
   </div>
 </main>
 
@@ -314,11 +322,15 @@
     background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
   }
-  .bg-header {
+  .header-fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 0,
-      rgba(255, 255, 255, 0) 45%,
+      rgba(255, 255, 255, 0) 15%,
       rgba(255, 255, 255, 0.7) 65%
     );
   }
