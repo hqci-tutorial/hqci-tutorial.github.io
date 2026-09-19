@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text:ital@0;1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", -apple-system, sans-serif;
+  --font-mono: "DM Mono", monospace;
+}
+
+@utility box-width {
+  @apply w-220 max-w-1/1 mx-auto;
+}
+
+
+@utility par-width {
+  @apply sm:w-120 max-w-1/1 w-1/1;
+}
+@utility tab-width {
+  @apply w-160 max-w-1/1;
+}
+
+@utility par-text {
+  @apply text-slate-500 text-sm ;
+}
+
+@utility alert-box {
+  @apply p-2 rounded-md text-teal-900 bg-teal-100 border-1 border-teal-400 shadow-sm;
+}
+
+@utility table-cell {
+  @apply border-slate-200 text-sm p-2 text-left;
+}
+
+a {
+  text-decoration: underline;
+}
+
+@layer base {
+  code {
+    @apply bg-slate-100 border-slate-300 text-slate-800 px-1 rounded-sm border-1 text-sm
+  }
+}
