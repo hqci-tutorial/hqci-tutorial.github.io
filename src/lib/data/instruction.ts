@@ -116,7 +116,7 @@ py -3.12 -m venv .hqci-tutorial
       image_alt: null,
       code: `pip install jupyterlab`
     }, {
-      text: `You will need to install <code>qiskit</code>, <code>matplotlib</code>, <code>qiskt[visualization]</code>, <code>revkit</code>.`,
+      text: `You will need to install <code>qiskit</code>, <code>matplotlib</code>, <code>qiskt[visualization]</code>, <code>qiskit-ibm-runtime</code>, <code>qiskit_aer</code>, <code>revkit</code>.`,
       // do we need numpy?
       link: null,
       image: null,
@@ -124,6 +124,8 @@ py -3.12 -m venv .hqci-tutorial
       code: `pip install qiskit
 pip install matplotlib
 pip install 'qiskit[visualization]'
+pip install qiskit-ibm-runtime
+pip install qiskit_aer
 pip install revkit`
     },]
   }, {
