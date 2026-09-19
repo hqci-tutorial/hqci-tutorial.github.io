@@ -23,7 +23,7 @@
 <main
   class="box-width text-md px-2 lg:px-0 md:flex md:gap-5 block md:h-[calc(100vh-5rem)] md:overflow-scroll print:p-5 print:h-fit print:overflow-content"
 >
-  <div class="left min-w-48 md:sticky md:top-0 print:hidden">
+  <div class="left md:w-48 md:sticky md:top-0 print:hidden w-full">
     <div
       class="display-banner h-30 rounded-md bg-slate-100 mt-3 mb-3 relative overflow-hidden"
     >
@@ -65,7 +65,7 @@
       {/each}
     </ol>
   </div>
-  <div class="right w-[calc(100%-var(--spacing)*53)]">
+  <div class="right md:w-[calc(100%-var(--spacing)*53)] w-full">
     <section class="mt-5 pb-7 border-b-1 border-slate-200">
       <span class="block mb-2 text-2xl text-violet-700 font-medium">
         Let's prepare for your learning!
@@ -96,13 +96,13 @@
               {/if}
               {#if step.link}
                 <br />Link:
-                <a href={step.link} target="_blank"
+                <a href={step.link} target="_blank" class="text-sm break-all"
                   >{step.link} <Icon type="link-ext"></Icon></a
                 >
               {/if}
               {#if step.download}
                 <br />Link:
-                <a href={step.download} download
+                <a href={step.download} download class="text-sm break-all"
                   >{step.download} <Icon type="link-ext"></Icon></a
                 >
               {/if}
@@ -131,8 +131,10 @@
 
 <style>
   .footer-banner {
+    margin-left: calc(var(--spacing) * -2);
+    margin-right: calc(var(--spacing) * -2);
     background: url("$lib/assets/background-large.png");
-    background-size: 100% auto;
+    background-size: 600px auto;
     background-position: center 65%;
     background-repeat: no-repeat;
     transform: rotate(180deg)
