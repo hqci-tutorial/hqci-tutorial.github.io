@@ -30,8 +30,8 @@ export const PrepInstructions: Prep[] = [
         image: null,
         image_alt: null
       }, {
-        text: `Click "Create an account," "Continue with Google," or "Continue with Red Hat" (whichever works for you). At this stage, you'll asked to provide your credit card information for verification purposes. You won't be charged.`,
-        desc: 'If this process is asking too much of your personal information at this step (e.g., your photo ID copies), please do not proceed. (It seems IBM automatically flags accesses out of U.S.).',
+        text: `Click "Create an account," "Continue with Google," or "Continue with Red Hat" (whichever works for you). At this stage, you'll be asked to provide your credit card information for verification purposes. You won't be charged.`,
+        desc: 'If this process asks for too much personal information at this stage (e.g., your photo ID copies), please do not proceed. (It seems IBM automatically flags accesses out of U.S.).',
         link: null,
         image: null,
         image_alt: null
@@ -51,7 +51,7 @@ export const PrepInstructions: Prep[] = [
         image: "create-instance-options.png",
         image_alt: "Two ways to create IBM quantum compute instance. First: clicking the create instance button in the welcome pop-up. Second: clicking the create instance button from the dashboard's top-right corner."
       }, {
-        text: `Now, get your access token (API key). Go to IAM settings > API Keys. And the click the blue "Create" button.`,
+        text: `Now, get your access token (API key). Go to IAM settings > API Keys. And then click the blue "Create" button.`,
         desc: "The below link will direct you there if you're signed in.",
         link: "https://cloud.ibm.com/iam/apikeys",
         image: "create-api-key-page.png",
@@ -62,7 +62,7 @@ export const PrepInstructions: Prep[] = [
         image: "api-key-creation-window.png",
         image_alt: "Create IBM Cloud API key window with the name configured.",
       }, {
-        text: `<strong>[Important] This your only chance to save your access token!</strong> Click copy or download (you can do both) to save it.`,
+        text: `<strong>[Important] This is your only chance to save your access token!</strong> Click copy or download (you can do both) to save it.`,
         link: null,
         image: "saving-api-key.png",
         image_alt: "A pop-up window for saving the created API key.",
@@ -98,7 +98,7 @@ export const PrepInstructions: Prep[] = [
       image: null,
       image_alt: null,
     }, {
-      text: "If you are familiar with virtual environment, consider doing it. To do so, locate a preferred run: ",
+      text: "If you are familiar with virtual environment, consider doing it. To do so, navigate to your preferred directory and run: ",
       link: null,
       image: null,
       image_alt: null,
@@ -116,7 +116,7 @@ py -3.12 -m venv .hqci-tutorial
       image_alt: null,
       code: `pip install jupyterlab`
     }, {
-      text: `You will need to install <code>qiskit</code>, <code>matplotlib</code>, <code>qiskt[visualization]</code>, <code>qiskit-ibm-runtime</code>, <code>qiskit_aer</code>, <code>revkit</code>.`,
+      text: `You will need to install <code>qiskit</code>, <code>matplotlib</code>, <code>qiskit[visualization]</code>, <code>qiskit-ibm-runtime</code>, <code>qiskit_aer</code>, <code>revkit</code>.`,
       // do we need numpy?
       link: null,
       image: null,
@@ -133,7 +133,7 @@ pip install revkit`
     title: "Run the test code",
     desc: null,
     steps: [{
-      text: "Download this notebok with template codes to the same location of your virtual environment, and run the notebook cell by cell. If you don't encounter any issue, you're good to go!",
+      text: "Download this notebook with template codes to the same location of your virtual environment, and run the notebook cell by cell. If you don't encounter any issue, you're good to go!",
       desc: `<a href="./notebooks/hqci-tutorial-prep-code.html" target="_blank">Preview</a>`,
       link: null,
       download: './notebooks/hqci-tutorial-prep-code.ipynb',

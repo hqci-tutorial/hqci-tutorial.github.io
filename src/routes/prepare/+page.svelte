@@ -71,8 +71,8 @@
         Let's prepare for your learning!
       </span>
       <p class="text-sm text-slate-600">
-        This documents will help you prepare for the tutorial session. Please
-        take a careful look at this document. If you exprience any troubles,
+        This document will help you prepare for the tutorial session. Please
+        take a careful look at this document. If you experience any trouble,
         take a look at the "troubleshoot" section.
       </p>
     </section>
