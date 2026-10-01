@@ -71,7 +71,7 @@
   });
 </script>
 
-<div class="header-fade md:h-[450px] h-[500px] z-1 block"></div>
+<div class="header-fade md:h-[450px] h-[500px] z-0 block"></div>
 
 <main
   class="box-width text-md px-2 lg:px-0 lg:overflow-x-visible overflow-x-hidden z-300"
@@ -99,7 +99,7 @@
       >Hello Quantum World!</span
     >
   </h2>
-  <div class="flex gap-3 justify-between flex-col md:flex-row relative z-300">
+  <div class="flex gap-3 justify-between flex-col md:flex-row relative">
     <div class="z-300">
       <p
         class="par-width h-fit-content par-text mb-5 border-1 rounded-md p-3 border-slate-200 shadow-sm shadow-slate-100 bg-white z-300"
