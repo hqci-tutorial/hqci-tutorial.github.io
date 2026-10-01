@@ -126,7 +126,7 @@ pip install matplotlib
 pip install 'qiskit[visualization]'
 pip install qiskit-ibm-runtime
 pip install qiskit_aer
-pip install revkit`
+pip install git+https://github.com/msoeken/revkit@develop`
     },]
   }, {
     id: "run-test",
