@@ -65,7 +65,7 @@
       {/each}
     </ol>
   </div>
-  <div class="right md:w-[calc(100%-var(--spacing)*53)] w-full">
+  <div class="right md:w-[calc(100%-var(--spacing)*55)] w-full">
     <section class="mt-5 pb-7 border-b-1 border-slate-200">
       <span class="block mb-2 text-2xl text-violet-700 font-medium">
         Let's prepare for your learning!
