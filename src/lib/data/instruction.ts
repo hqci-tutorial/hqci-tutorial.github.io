@@ -103,7 +103,7 @@ export const PrepInstructions: Prep[] = [
       image: null,
       image_alt: null,
       code: `# mac
-python3.12 -m venv .hqci-tutorial
+python3 -m venv .hqci-tutorial
 source .hqci-tutorial/bin/activate
 
 # windows
@@ -124,9 +124,18 @@ py -3.12 -m venv .hqci-tutorial
       code: `pip install qiskit
 pip install matplotlib
 pip install 'qiskit[visualization]'
+pip install altair
 pip install qiskit-ibm-runtime
 pip install qiskit_aer
 pip install git+https://github.com/msoeken/revkit@develop`
+    }, {
+      text: `In case of an error while installing revkit, then try below`,
+      // do we need numpy?
+      link: null,
+      image: null,
+      image_alt: null,
+      code: `pip install pybind11 setuptools wheel
+pip install --no-build-isolation git+https://github.com/msoeken/revkit@develop`
     },]
   }, {
     id: "run-test",
