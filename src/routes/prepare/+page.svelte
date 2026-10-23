@@ -41,7 +41,7 @@
       />
       <img
         src={image_sphere}
-        alt="a futuristic purple-orange wire shpaed in a sphere"
+        alt="a futuristic purple-orange wire shaped in a sphere"
         class="absolute img-ziggle z-0 drop-shadow-2xl drop-shadow-indigo-100 w-35 md:w-25"
         style={`top: 50%; left: 50%; transform: translate(35%, -50%);`}
       />

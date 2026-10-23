@@ -18,7 +18,7 @@
 	sticky top-0 z-999 blur-10 bg-gray-200/70"
 >
 	<nav class="flex gap-3 justify-center">
-		<span class="block">HQCI Toturial 2026</span>
+		<span class="block">HQCI Tutorial 2026</span>
 		<a class="block" href="./">Main</a>
 		<a class="block" href="./prepare">Preparation</a>
 		<a class="block" href="./materials">Materials (NEW!)</a>

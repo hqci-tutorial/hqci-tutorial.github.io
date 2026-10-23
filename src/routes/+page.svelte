@@ -38,7 +38,7 @@
     },
     {
       time: "11-11:30 AM",
-      duration: "30 min",
+      duration: "30 min.",
       title: `Interacting with QC 1:`,
       content: `Entanglement, simple search circuit (introduction)`,
     },
@@ -49,7 +49,7 @@
     },
     {
       time: "1-1:20 PM",
-      duration: "20 min",
+      duration: "20 min.",
       title: `Interacting with QC 2:`,
       content: `Simple search circuit (execution)`,
     },
@@ -113,9 +113,9 @@
         many visualization researchers lack opportunities to learn and
         experience quantum computing in an HCI-oriented way. Therefore, we offer
         an introductory tutorial for quantum computing to facilitate research at
-        an intersection of visualization and quantum computing. Specifically,
+        the intersection of visualization and quantum computing. Specifically,
         our tutorial will cover fundamental concepts in quantum computing, the
-        current landscape of HCI/VIS research in quantum computing, writing
+        current landscape of Vis/HCI research in quantum computing, writing
         simple quantum programs, and a short brainstorming session about future
         research goals for the field.
       </p>
@@ -137,7 +137,7 @@
       />
       <img
         src={image_sphere}
-        alt="a futuristic purple-orange wire shpaed in a sphere"
+        alt="a futuristic purple-orange wire shaped in a sphere"
         class="absolute img-ziggle z-0"
         style={`width: 11vw; height: 11vw; max-width: 220px; max-height: 220px;  min-width: 190px; min-height: 190px; top: 50%; left: 55%; transform: translate(-10%, 15%);`}
       />
@@ -167,7 +167,7 @@
         </p>
       </div>
       <p class="mt-2 text-sm mb-5 text-slate-400">
-        Up-to-date information is available via
+        Up-to-date information is available
         <a
           href="https://ieeevis.org/year/2026/program/calendar/"
           target="_blank">here <Icon type="link-ext"></Icon></a
@@ -229,13 +229,13 @@
         (optional)
       </li>
       <li>
-        A short <strong>statement of interest</strong> (in any length) about what
-        you expect to learn from this workshop.
+        A short <strong>statement of interest</strong> (of any length) about what
+        you expect to learn from this tutorial.
       </li>
     </ul>
     <p class="mb-5 text-slate-500 par-width text-sm">
       We are collecting this information to estimate the number of attendees and
-      support preliminary setups (including perparation materials). We are
+      support preliminary setups (including preparation materials). We are
       expecting 20+ attendees for an effective hands-on tutorial. While you can
       still attend this tutorial without filling out this form, priority for
       technical support will be given to those who have filled it out. If you

@@ -22,7 +22,7 @@ export const PrepInstructions: Prep[] = [
   {
     id: "create-account",
     title: "Create and set up an IBM Cloud account",
-    desc: "Only if you don't have one yet! You can skip this part if you don't want to try out a real quantum computer. Creating an IBM account will give you 10-minute credit per month (USD 1.60 per second after 10 minutes).",
+    desc: "Only if you don't have one yet! You can skip this part if you don't want to try out a real quantum computer. Creating an IBM account will give you 10 minutes of credit per month (USD 1.60 per second after 10 minutes).",
     steps: [
       {
         text: "Access IBM Cloud portal",
@@ -31,12 +31,12 @@ export const PrepInstructions: Prep[] = [
         image_alt: null
       }, {
         text: `Click "Create an account," "Continue with Google," or "Continue with Red Hat" (whichever works for you). At this stage, you'll be asked to provide your credit card information for verification purposes. You won't be charged.`,
-        desc: 'If this process asks for too much personal information at this stage (e.g., your photo ID copies), please do not proceed. (It seems IBM automatically flags accesses out of U.S.).',
+        desc: 'If this process asks for too much personal information at this stage (e.g., your photo ID copies), please do not proceed. (It seems IBM automatically flags accesses outside of U.S.).',
         link: null,
         image: null,
         image_alt: null
       }, {
-        text: `Sign in with your account. Then, you will see IBM Cloud dashboard.`,
+        text: `Sign in with your account. Then, you will see the IBM Cloud dashboard.`,
         link: null,
         image: null,
         image_alt: null
@@ -81,7 +81,7 @@ export const PrepInstructions: Prep[] = [
         code: `QiskitRuntimeService.save_account(token="<your-api-key-here>", overwrite=True)`
       }, {
         text: `[Option 3] Save credentials as a file in a directory for this tutorial (your choice).`,
-        desc: 'Recommended for beginners. Save it as `credentials.txt` in your directory.',
+        desc: 'Recommended for beginners. Save it as `credential.txt` in your directory.',
         link: null,
         image: null,
         image_alt: null
@@ -92,23 +92,23 @@ export const PrepInstructions: Prep[] = [
     title: "Install required packages",
     desc: null,
     steps: [{
-      text: "Install python! When you open a terminal and type <code>python</code>, you should be seeing Python 3.12+.",
-      desc: "This tutorial will use 3.12.",
+      text: "Install Python! When you open a terminal and type <code>python</code>, you should be seeing Python 3.14+.",
+      desc: "This tutorial will use 3.14.",
       link: 'https://www.python.org/downloads/',
       image: null,
       image_alt: null,
     }, {
-      text: "If you are familiar with virtual environment, consider doing it. To do so, navigate to your preferred directory and run: ",
+      text: "If you are familiar with virtual environments, consider using one. To do so, navigate to your preferred directory and run: ",
       link: null,
       image: null,
       image_alt: null,
       code: `# mac
-python3 -m venv .hqci-tutorial
+python3.14 -m venv .hqci-tutorial --python # if you're using uv or pyenv, set it accordingly.
 source .hqci-tutorial/bin/activate
 
 # windows
 py -3.12 -m venv .hqci-tutorial
-.hqci-tutorial\\bin\\activate.bat`
+.hqci-tutorial\\Scripts\\activate.bat`
     }, {
       text: "Install Jupyter Lab—we're going to use this for the tutorial.",
       link: null,
@@ -116,7 +116,7 @@ py -3.12 -m venv .hqci-tutorial
       image_alt: null,
       code: `pip install jupyterlab`
     }, {
-      text: `You will need to install <code>qiskit</code>, <code>matplotlib</code>, <code>qiskit[visualization]</code>, <code>qiskit-ibm-runtime</code>, <code>qiskit_aer</code>, <code>revkit</code>.`,
+      text: `You will need to install <code>qiskit</code>, <code>matplotlib</code>, <code>qiskit[visualization]</code>, <code>qiskit-ibm-runtime</code>, <code>altair</code>, <code>patoka</code>, <code>qiskit_aer</code>, <code>revkit</code>.`,
       // do we need numpy?
       link: null,
       image: null,
@@ -127,9 +127,10 @@ pip install 'qiskit[visualization]'
 pip install altair
 pip install qiskit-ibm-runtime
 pip install qiskit_aer
+pip install patoka
 pip install git+https://github.com/msoeken/revkit@develop`
     }, {
-      text: `In case of an error while installing revkit, then try below`,
+      text: `In case of an error while installing revkit, try the following`,
       // do we need numpy?
       link: null,
       image: null,
@@ -142,16 +143,16 @@ pip install --no-build-isolation git+https://github.com/msoeken/revkit@develop`
     title: "Run the test code",
     desc: null,
     steps: [{
-      text: "Download this notebook with template codes to the same location of your virtual environment, and run the notebook cell by cell. If you don't encounter any issue, you're good to go!",
+      text: "Download this notebook with template code in the same location as your virtual environment, and run the notebook cell by cell. If you don't encounter any issue, you're good to go!",
       desc: `<a href="./notebooks/hqci-tutorial-prep-code.html" target="_blank">Preview</a>`,
       link: null,
       download: './notebooks/hqci-tutorial-prep-code.ipynb',
       image: null,
       image_alt: null,
-      code: `# to run it on a jupyter lab, locate your directory and run: 
+      code: `# to run it in JupyterLab, navigate to your directory and run: 
 jupyter lab`
     }, {
-      text: "At the end, your directory should look like this.",
+      text: "At the end, your directory should look like this. You will place the template notebook files in this directory (see the Materials page).",
       link: null,
       image: null,
       image_alt: null,
@@ -159,7 +160,8 @@ jupyter lab`
 ├── .hqci-tutorial
 ├── .ipynb_checkpoints
 ├── credential.txt # optional
-└── hqci-tutorial-prep-code.ipynb
+├── hqci-tutorial-prep-code.ipynb
+└── # tutorial templates here
 `
     },]
   }, {
@@ -168,7 +170,7 @@ jupyter lab`
     desc: null,
     steps: [
       {
-        text: 'For IBM account, please contact IBMid.',
+        text: 'For IBM account issues, please contact IBMid support.',
         link: null,
         image: null,
         image_alt: null

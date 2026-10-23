@@ -15,10 +15,10 @@ type Section = {
 export const Materials: Section[] = [{
   id: "blank-notebooks",
   title: "Exercise Templates",
-  desc: "Template Jupyter notebooks for the exercise. Please download and then locate it under the exercise folder (instructed in the preparation page). We will cover these during the tutorial.",
+  desc: "Template Jupyter notebooks for the exercise. Please download them and place them in the exercise folder (instructed in the preparation page). We will cover these during the tutorial.",
   files: [{
     title: "Exercise 1 Notebook",
-    description: "A blank template for Exercise 1 (entagnlement).",
+    description: "A blank template for Exercise 1 (entanglement).",
     file_path: "notebooks/exercise-1-entanglement-blank.ipynb",
     when_to_review: "pre"
   }, {
