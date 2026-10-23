@@ -24,7 +24,7 @@ export const Materials: Section[] = [{
   }, {
     title: "Exercise 2 Notebook",
     description: "A blank template for Exercise 2 (search).",
-    file_path: "notebooks/exercise-1-search-blank.ipynb",
+    file_path: "notebooks/exercise-2-search-blank.ipynb",
     when_to_review: "pre"
   }]
 }, {
