@@ -108,7 +108,7 @@ source .hqci-tutorial/bin/activate
 
 # windows
 py -3.12 -m venv .hqci-tutorial
-.hqci-tutorial/bin/activate.bat`
+.hqci-tutorial\\bin\\activate.bat`
     }, {
       text: "Install Jupyter Lab—we're going to use this for the tutorial.",
       link: null,
