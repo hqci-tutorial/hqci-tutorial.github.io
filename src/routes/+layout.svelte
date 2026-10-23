@@ -21,7 +21,7 @@
 		<span class="block">HQCI Toturial 2026</span>
 		<a class="block" href="./">Main</a>
 		<a class="block" href="./prepare">Preparation</a>
-		Materials (TBD)
+		<a class="block" href="./materials">Materials (NEW!)</a>
 	</nav>
 </header>
 
