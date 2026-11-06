@@ -29,7 +29,12 @@ export const Materials: Section[] = [{
   }]
 }, {
   id: "slides",
-  title: "Tutorial Slides",
-  desc: "(TBD)",
-  files: []
+  title: "Tutorial Slides and Handouts",
+  desc: "Lecture portion contents",
+  files: [{
+    title: "Handouts",
+    description: "Handouts (printed version will be distributed).",
+    file_path: "files/hqci-tutorial-handout.pdf",
+    when_to_review: "during"
+  },]
 }]
