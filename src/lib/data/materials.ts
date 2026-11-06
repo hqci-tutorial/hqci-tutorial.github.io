@@ -12,6 +12,8 @@ type Section = {
   files: Item[];
 };
 
+const copyright_text = `Copyrighted images in the original slides are removed; some are replaced with links.`
+
 export const Materials: Section[] = [{
   id: "blank-notebooks",
   title: "Exercise Templates",
@@ -36,5 +38,16 @@ export const Materials: Section[] = [{
     description: "Handouts (printed version will be distributed).",
     file_path: "files/hqci-tutorial-handout.pdf",
     when_to_review: "during"
-  },]
+  // },{
+  //   title: "Session 1 Slides",
+  //   description: "The slides for Session 1 (lecture part)." + copyright_text,
+  //   file_path: "files/hqci-tutorial-handout.pdf",
+  //   when_to_review: "during"
+  // },{
+  //   title: "Session 2 Slides",
+  //   description: "The slides for Session 2 (research part)." + copyright_text,
+  //   file_path: "files/hqci-tutorial-handout.pdf",
+  //   when_to_review: "during"
+  },
+]
 }]
